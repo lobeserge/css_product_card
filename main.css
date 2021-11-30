@@ -1,0 +1,259 @@
+        .container {
+            width: 80%;
+            height: 100%;
+            font-family: SansFont;
+            margin: 0 auto;
+            /* background-color: red; */
+        }
+        
+        @font-face {
+            font-family: SansFont;
+            src: url("https://fonts.google.com/specimen/Kumbh+Sans");
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 9vh;
+        }
+        
+        .header_left {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav_list {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            opacity: 0.6;
+            align-items: center;
+        }
+        
+        .logo {
+            height: 16px;
+        }
+        
+        .header_right {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .cart_icon {
+            height: 16px;
+            width: 16px;
+        }
+        
+        .user {
+            height: 40px;
+            width: 40px;
+        }
+        
+        .splitter hr {
+            opacity: 0.6;
+            width: 100%;
+            border-top: 1px solid rgb(192, 192, 192);
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+        }
+        
+        .content {
+            display: flex;
+            gap: 7%;
+            margin-top: 7vh;
+            justify-content: center;
+        }
+        
+        .content_left {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .main_image {
+            border-radius: 5px;
+            height: 350px;
+            width: 350px;
+        }
+        
+        .main_image_preview {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5%;
+        }
+        
+        .sub_images {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        
+        .sub_images_item {
+            height: 70px;
+            width: 70px;
+            border-radius: 15%;
+        }
+        
+        .content_right {
+            width: 40%;
+            align-self: center;
+        }
+        
+        .product_company {
+            color: #FFA756;
+            font-weight: bold;
+        }
+        
+        .product_heading {
+            font-size: 40px;
+        }
+        
+        .product_description {
+            width: 80%;
+            opacity: 0.7;
+        }
+        
+        .product_price {
+            font-size: 20px;
+        }
+        
+        .product_discount {
+            font-size: 16px;
+            color: #FFA756;
+            background-color: rgba(255, 223, 191, 0.6);
+            border-radius: 15%;
+            padding: 5px;
+        }
+        
+        .product_discount_amount {
+            font-size: 14px;
+            opacity: 0.6;
+        }
+        
+        .items_count {
+            background-color: rgba(192, 192, 192, 0.3);
+            width: 125px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 10px;
+        }
+        
+        .item_count_value {
+            width: 30px;
+            height: 80%;
+            border: none;
+            text-align: center;
+            font-size: 16px;
+            background-color: rgba(192, 192, 192, 0.0);
+        }
+        
+        .item_count_value:focus {
+            outline: none;
+        }
+        
+        .add_product {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        .add_button {
+            height: 45px;
+            width: 20em;
+            background-color: #FFA756;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0px 20px 10px rgba(255, 167, 86, 0.2);
+            margin-top: 10px;
+        }
+        
+        .btn_icon {
+            fill: white;
+            margin-left: 10px;
+        }
+        
+        .menu {
+            display: none;
+        }
+        
+        @media screen and (max-width:842px) {
+            * {
+                margin-left: 0;
+            }
+            .container {
+                width: 100vw;
+                justify-content: center;
+                margin-left: 0px;
+            }
+            .content {
+                flex-direction: column;
+            }
+            .splitter hr {
+                display: none;
+            }
+            .header {
+                height: 7vh;
+                width: 80vw;
+                margin: 0 auto;
+            }
+            .content {
+                /* background-color: blue; */
+                display: flex;
+                gap: 7%;
+                justify-content: center;
+                margin-top: 0px;
+            }
+            .sub_images {
+                display: none;
+            }
+            .content_right {
+                width: 100%;
+            }
+            .add_product {
+                flex-direction: column;
+            }
+            .add_button {
+                width: 80vw;
+            }
+            .items_count {
+                width: 80vw;
+            }
+            .product_description {
+                width: 90vw;
+            }
+            .product_heading {
+                font-size: 25px;
+                width: 70vw;
+            }
+            .nav_elements {
+                display: none;
+            }
+            .main_image {
+                width: 100vw;
+                background-color: blue;
+                margin-left: 0px;
+            }
+            .main_image_preview {
+                border-radius: 0px;
+            }
+            .space_right {
+                margin-left: 30px;
+            }
+            .menu {
+                display: block;
+                margin-right: 20px;
+            }
+            .user {
+                margin-left: 10px;
+            }
+        }
